@@ -1,4 +1,4 @@
-#ACTCORP AUTO-LOGIN SCRIPT
+# ACTCORP AUTO-LOGIN SCRIPT
 This script can be use to setup auto-login on the ACT Corp network
 without having the need to going to the redirect page entering password
 and again. The script ensures that when the user gets logged out of the 
