@@ -2,7 +2,16 @@
 This script can be use to setup auto-login on the ACT Corp network
 without having the need to going to the redirect page entering password
 and again. The script ensures that when the user gets logged out of the 
-network they get automatically logged in 1 second (easily modifiable interval).
+network they get automatically logged in 5 second (easily modifiable interval).
+
+## The easy way out
+If your router is supported you should go for the easy solution:
+1. Go to your routers login page.
+2. Set Internet Connection Type to PPPoE.
+3. Enter username and password and you're done.
+
+If you are one of the unlucky one's for which this doesn't work use the
+below scripts.
 
 ## Requirements
 1. Python3
@@ -23,6 +32,12 @@ Update the USERNAME and PASSWORD variables in `autologin_actcorp.py` file.
 ```python
 USERNAME = '<username>'
 PASSWORD = '<password>'
+```
+
+if you are trying to use this outside of hyd circle you might need to update
+the REDIRECT_ADDRESS address.
+```python
+REDIRECT_ADDRESS = '<redirect server>'
 ```
 
 ### 3. Run the script.
